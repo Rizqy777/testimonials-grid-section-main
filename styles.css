@@ -33,7 +33,7 @@ body{
 
 .container_main{
     height: 650px;
-    width: 80%;
+    width: 90%;
     padding: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
