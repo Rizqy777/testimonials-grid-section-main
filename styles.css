@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+/* border: 1px solid black; */
+margin: 0;
+padding: 0;
+}
+
+:root{
+    /* ### Primary */
+
+--violet: hsl(263, 55%, 52%);
+--Very-darkblue: hsl(217, 19%, 35%);
+--Very-darkblackish: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+/* ### Neutral */
+
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayishblue: hsl(210, 46%, 95%);
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: var(--Light-grayishblue);
+    font-size: 13px;
+
+    
+}
+
+.container_main{
+    height: 650px;
+    width: 80%;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+
+.card_daniel, .card_jonathan, .card_kira, .card_patrick, .card_jeanette{
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.user, .text_big {
+  margin-bottom: 20px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.img{
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.374);
+    width: 40px;
+    margin-right: 20px;
+}
+.img-2{
+    border: 2px solid var(--violet);
+}
+.name{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    color: var(--White);
+}
+.name-2{
+    color: var(--Very-darkblue);
+
+}
+.verified{
+    display: block;
+    color: rgba(255, 255, 255, 0.509);
+}
+.verified-2{
+    color:hsla(217, 19%, 35%, 0.537) ;
+}
+
+.text_big{
+    color: var(--White);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    position: relative;
+
+}
+
+.text_big-2{
+    color: var(--Very-darkblackish);
+    
+}
+
+.text_small{
+    color: rgba(255, 255, 255, 0.537);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    font-size: .853rem;
+    line-height: 20px;
+}
+
+.text_small-2{
+    color: var(--Very-darkblue);
+
+}
+
+
+
+
+
+.card_daniel{
+    background-color: var(--violet);
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    
+}
+.quotation{
+position: absolute;
+  right: 20%;
+  top: 0px;
+  
+}
+
+
+
+.card_jonathan{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: var(--Very-darkblue);
+}
+
+.card_patrick{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: var(--Very-darkblackish);
+}
+
+.card_kira{
+grid-row-start: 1;
+grid-row-end: 3;
+grid-column-start:4 ;
+grid-column-end: 5; 
+background-color: var(--White);   
+}
+
+.card_jeanette{
+    background-color: var(--White);
+}
+
+
+@media all and (max-width: 500px){
+    .container_main{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr;
+}
+.card_daniel{
+    grid-row-start:1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: fit-content;
+}
+
+.card_jonathan{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: fit-content;
+}
+
+.card_jeanette{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.card_patrick{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.card_kira{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: fit-content;
+
+}
+
+.quotation{
+    right: 10px;
+}
+
+}
